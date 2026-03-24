@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature & Jardin - Entretien d'espaces verts</title>
+  <meta name="description" content="Entreprise d'espaces verts : entretien de jardin, tonte, taille de haies, création paysagère et débroussaillage." />
+  <style>
+    :root {
+      --bg: #f6fbf7;
+      --green: #1f6f43;
+      --green-dark: #144a2d;
+      --green-soft: #e5f4e8;
+      --text: #1e2a22;
+      --muted: #5d6c63;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(20, 74, 45, 0.12);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246, 251, 247, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(31, 111, 67, 0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #2da35f, #1f6f43);
+      color: white;
+      font-size: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover { background: var(--green-dark); }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--green-dark);
+      border: 1px solid rgba(31, 111, 67, 0.15);
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      line-height: 1.08;
+      margin: 0 0 18px;
+      color: var(--green-dark);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin: 0 0 24px;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(229,244,232,0.95));
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(31, 111, 67, 0.08);
+    }
+
+    .hero-visual {
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        linear-gradient(rgba(20,74,45,0.12), rgba(20,74,45,0.12)),
+        url('https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80') center/cover;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-visual .overlay-box {
+      background: rgba(20, 74, 45, 0.72);
+      border-radius: 16px;
+      padding: 16px;
+      width: fit-content;
+      max-width: 100%;
+    }
+
+    section {
+      padding: 36px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .section-title h2 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      color: var(--green-dark);
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(31, 111, 67, 0.08);
+    }
+
+    .icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 { margin: 0 0 10px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+      min-height: 360px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .stat {
+      background: var(--green-soft);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--green-dark);
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      color: var(--muted);
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(31, 111, 67, 0.15);
+      font: inherit;
+      background: #fbfefb;
+    }
+
+    textarea { min-height: 140px; resize: vertical; }
+
+    footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .cards,
+      .about,
+      .contact-box,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul { display: none; }
+      .hero { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <div class="logo">🌿</div>
+        <span>Nature & Jardin</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="#contact">Demander un devis</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Entreprise d'espaces verts</span>
+          <h1>Donnez vie à vos extérieurs avec un jardin propre, sain et durable.</h1>
+          <p>
+            Entretien, création et aménagement d'espaces verts pour particuliers, entreprises et copropriétés.
+            Intervention rapide, travail soigné et accompagnement sur mesure.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Obtenir un devis</a>
+            <a class="btn btn-secondary" href="#services">Voir nos services</a>
+          </div>
+        </div>
+
+        <div class="hero-card hero-visual">
+          <div class="overlay-box">
+            <strong>Intervention locale</strong>
+            <div>Entretien régulier, taille, tonte, débroussaillage</div>
+          </div>
+          <div class="overlay-box">
+            <strong>Devis gratuit</strong>
+            <div>Réponse rapide pour vos besoins extérieurs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nos services</h2>
+          <p>Des prestations simples, efficaces et adaptées à chaque terrain.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon">✂️</div>
+            <h3>Taille et élagage</h3>
+            <p>Taille de haies, arbustes, petits arbres et entretien de vos extérieurs tout au long de l'année.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🚜</div>
+            <h3>Tonte et débroussaillage</h3>
+            <p>Remise en état de terrain, tonte régulière, nettoyage et entretien de grandes surfaces vertes.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🌼</div>
+            <h3>Création paysagère</h3>
+            <p>Massifs, plantations, aménagement décoratif et valorisation esthétique de votre jardin.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <div class="container about">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Jardin entretenu" />
+        <div>
+          <div class="section-title" style="text-align:left; margin-bottom: 16px;">
+            <h2>Un partenaire de confiance pour vos espaces verts</h2>
+            <p>
+              Nous accompagnons les particuliers et professionnels dans l'entretien et l'embellissement de leurs extérieurs,
+              avec une approche sérieuse, humaine et durable.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong>+10 ans</strong>
+              <span>d'expérience</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>devis gratuit</span>
+            </div>
+            <div class="stat">
+              <strong>Local</strong>
+              <span>et réactif</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Parlez-nous de votre projet, nous revenons vers vous rapidement.</p>
+        </div>
+        <div class="contact-box">
+          <div>
+            <h3>Coordonnées</h3>
+            <div class="contact-list">
+              <div><strong>Téléphone :</strong> 06 00 00 00 00</div>
+              <div><strong>Email :</strong> contact@nature-jardin.fr</div>
+              <div><strong>Zone :</strong> Votre ville et alentours</div>
+              <div><strong>Horaires :</strong> Lun - Sam / 8h00 - 18h00</div>
+            </div>
+          </div>
+          <form>
+            <input type="text" placeholder="Votre nom" />
+            <input type="email" placeholder="Votre email" />
+            <input type="text" placeholder="Votre téléphone" />
+            <textarea placeholder="Décrivez votre besoin..."></textarea>
+            <button class="btn btn-primary" type="button">Envoyer votre demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Nature & Jardin - Tous droits réservés</div>
+  </footer>
+</body>
+</html>
