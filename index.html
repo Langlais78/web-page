@@ -500,8 +500,115 @@
     .phone { background: linear-gradient(135deg, var(--green-700), var(--green-900)); }
     .whatsapp { background: linear-gradient(135deg, #2ac566, #149946); }
 
+    .before-after-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .before-after-track {
+      display: flex;
+      transition: transform .45s ease;
+      will-change: transform;
+    }
+
+    .before-after-slide {
+      min-width: 100%;
+    }
+
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .before-after-image-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      margin-top: 14px;
+      border: 1px solid rgba(32,79,53,0.08);
+      background: #f1f6f2;
+    }
+
+    .before-after-image-wrap img {
+      width: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .before-badge,
+    .after-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+
+    .before-badge {
+      background: rgba(17,24,39,0.82);
+      color: white;
+    }
+
+    .after-badge {
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
+      color: white;
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .carousel-arrow {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(32,79,53,0.12);
+      background: rgba(255,255,255,0.92);
+      color: var(--green-900);
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+
+    .carousel-dots {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      border: none;
+      background: rgba(32,79,53,0.18);
+      cursor: pointer;
+      transition: .25s ease;
+      padding: 0;
+    }
+
+    .carousel-dot.active {
+      width: 28px;
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
+    }
+
     @media (max-width: 980px) {
-      .hero-grid, .grid-3, .grid-4, .grid-2, .hero-trust {
+      .hero-grid, .grid-3, .grid-4, .grid-2, .hero-trust, .before-after-grid {
         grid-template-columns: 1fr;
       }
 
@@ -766,25 +873,91 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Avant / après : le résultat fait la différence</h2>
+          <h2>Avant / après : plusieurs chantiers en carousel</h2>
           <p>
-            Remplace ces deux visuels par tes vraies photos pour montrer concrètement la qualité du travail. C’est un des meilleurs leviers pour convaincre rapidement un futur client.
+            Oui, c’est même une très bonne idée : le visiteur voit plusieurs réalisations sans faire défiler toute la page. Remplace simplement les images par tes vrais chantiers.
           </p>
         </div>
 
-        <div class="grid-2">
-          <div class="card">
-            <div class="icon">📷</div>
-            <h3>Avant intervention</h3>
-            <img src="images/avant-jardin.jpg" alt="Avant entretien jardin" style="width:100%; border-radius:16px; margin-top:14px; object-fit:cover; min-height:260px;" />
-            <p style="margin-top:14px;">Photo d’un jardin avant entretien, remise en état ou amélioration extérieure.</p>
+        <div class="before-after-carousel" id="beforeAfterCarousel">
+          <div class="before-after-track">
+            <div class="before-after-slide">
+              <div class="before-after-grid">
+                <div class="card">
+                  <div class="icon">📷</div>
+                  <h3>Chantier 1 — Avant</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="before-badge">Avant</span>
+                    <img src="images/chantier-1-avant.jpg" alt="Chantier 1 avant entretien jardin" />
+                  </div>
+                  <p style="margin-top:14px;">Exemple : terrain encombré, herbe haute, haies à reprendre ou jardin à remettre en état.</p>
+                </div>
+
+                <div class="card">
+                  <div class="icon">✨</div>
+                  <h3>Chantier 1 — Après</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="after-badge">Après</span>
+                    <img src="images/chantier-1-apres.jpg" alt="Chantier 1 après entretien jardin" />
+                  </div>
+                  <p style="margin-top:14px;">Résultat propre, net et valorisant pour montrer immédiatement la qualité du travail.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="before-after-slide">
+              <div class="before-after-grid">
+                <div class="card">
+                  <div class="icon">📷</div>
+                  <h3>Chantier 2 — Avant</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="before-badge">Avant</span>
+                    <img src="images/chantier-2-avant.jpg" alt="Chantier 2 avant création espace vert" />
+                  </div>
+                  <p style="margin-top:14px;">Exemple : extérieur peu entretenu, zone vide ou espace à améliorer visuellement.</p>
+                </div>
+
+                <div class="card">
+                  <div class="icon">✨</div>
+                  <h3>Chantier 2 — Après</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="after-badge">Après</span>
+                    <img src="images/chantier-2-apres.jpg" alt="Chantier 2 après création espace vert" />
+                  </div>
+                  <p style="margin-top:14px;">Mise en valeur de l’extérieur après entretien, réorganisation ou création d’un espace plus agréable.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="before-after-slide">
+              <div class="before-after-grid">
+                <div class="card">
+                  <div class="icon">📷</div>
+                  <h3>Chantier 3 — Avant</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="before-badge">Avant</span>
+                    <img src="images/chantier-3-avant.jpg" alt="Chantier 3 avant petit bricolage extérieur" />
+                  </div>
+                  <p style="margin-top:14px;">Exemple : petit chantier extérieur ou zone nécessitant une intervention rapide et propre.</p>
+                </div>
+
+                <div class="card">
+                  <div class="icon">✨</div>
+                  <h3>Chantier 3 — Après</h3>
+                  <div class="before-after-image-wrap">
+                    <span class="after-badge">Après</span>
+                    <img src="images/chantier-3-apres.jpg" alt="Chantier 3 après petit bricolage extérieur" />
+                  </div>
+                  <p style="margin-top:14px;">Résultat final pour montrer le soin apporté, la finition et la transformation visible.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="icon">✨</div>
-            <h3>Après intervention</h3>
-            <img src="images/apres-jardin.jpg" alt="Après entretien jardin" style="width:100%; border-radius:16px; margin-top:14px; object-fit:cover; min-height:260px;" />
-            <p style="margin-top:14px;">Photo du résultat final pour mettre en avant le rendu propre, net et professionnel.</p>
+          <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" id="carouselPrev" aria-label="Chantier précédent">‹</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-arrow" type="button" id="carouselNext" aria-label="Chantier suivant">›</button>
           </div>
         </div>
       </div>
@@ -884,5 +1057,60 @@
     <a class="floater phone" href="tel:0763330326" aria-label="Appeler">📞</a>
     <a class="floater whatsapp" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
   </div>
+  <script>
+    (function () {
+      const carousel = document.getElementById('beforeAfterCarousel');
+      if (!carousel) return;
+
+      const track = carousel.querySelector('.before-after-track');
+      const slides = Array.from(carousel.querySelectorAll('.before-after-slide'));
+      const prevBtn = document.getElementById('carouselPrev');
+      const nextBtn = document.getElementById('carouselNext');
+      const dotsWrap = document.getElementById('carouselDots');
+      let index = 0;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Aller au chantier ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsWrap.querySelectorAll('.carousel-dot'));
+
+      function update() {
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+      }
+
+      function goTo(i) {
+        index = (i + slides.length) % slides.length;
+        update();
+      }
+
+      prevBtn.addEventListener('click', () => goTo(index - 1));
+      nextBtn.addEventListener('click', () => goTo(index + 1));
+
+      let startX = 0;
+      let endX = 0;
+
+      carousel.addEventListener('touchstart', (e) => {
+        startX = e.changedTouches[0].clientX;
+      }, { passive: true });
+
+      carousel.addEventListener('touchend', (e) => {
+        endX = e.changedTouches[0].clientX;
+        const diff = endX - startX;
+        if (Math.abs(diff) > 40) {
+          if (diff < 0) goTo(index + 1);
+          else goTo(index - 1);
+        }
+      }, { passive: true });
+
+      update();
+    })();
+  </script>
 </body>
 </html>
