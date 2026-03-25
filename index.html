@@ -3,65 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jardinier à Senonches | Les Services de la Vaucouleurs</title>
-  <meta
-    name="description"
-    content="Les Services de la Vaucouleurs, jardinier à Senonches : entretien de jardin, tonte, taille, création d’espaces verts et petit bricolage. Devis gratuit, intervention rapide."
-  />
-  <meta
-    name="keywords"
-    content="jardinier Senonches, entretien jardin Senonches, espaces verts Eure-et-Loir, jardinage Senonches, tonte pelouse Senonches, taille haies Senonches"
-  />
-  <meta name="theme-color" content="#2f6b3b" />
+  <title>Les Services de la Vaucouleurs | Jardinier à Senonches</title>
+  <meta name="description" content="Les Services de la Vaucouleurs à Senonches : entretien de jardin, tonte, taille, création d’espaces verts et petit bricolage. Devis gratuit, intervention rapide, 25 ans d’expérience." />
+  <meta name="keywords" content="jardinier Senonches, entretien jardin Senonches, espaces verts Eure-et-Loir, tonte pelouse Senonches, taille haie Senonches, petit bricolage Senonches" />
+  <meta name="theme-color" content="#204f35" />
   <meta property="og:title" content="Les Services de la Vaucouleurs | Jardinier à Senonches" />
-  <meta
-    property="og:description"
-    content="Entretien de jardin, création d’espaces verts et petit bricolage à Senonches et 20 km autour. 25 ans d’expérience, devis gratuit, intervention rapide."
-  />
+  <meta property="og:description" content="Entretien de jardin, création d’espaces verts et petit bricolage à Senonches et 20 km autour. Devis gratuit et intervention rapide." />
   <meta property="og:type" content="website" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --green-900: #1f4d2c;
-      --green-800: #2f6b3b;
-      --green-700: #3e864b;
-      --green-100: #edf7ef;
-      --green-50: #f7fcf8;
+      --bg: #f6faf7;
+      --bg-soft: #eef7f0;
+      --card: rgba(255,255,255,0.88);
+      --card-solid: #ffffff;
+      --text: #122018;
+      --muted: #5d6c63;
+      --line: rgba(32, 79, 53, 0.10);
+      --green-900: #163c29;
+      --green-800: #204f35;
+      --green-700: #2c6b47;
+      --green-600: #3d8c5f;
+      --green-100: #e6f3ea;
+      --accent: #9fd9a9;
       --white: #ffffff;
-      --text: #1f2937;
-      --muted: #5b6470;
-      --border: #d9e7dc;
-      --shadow: 0 15px 35px rgba(31, 77, 44, 0.10);
-      --radius: 22px;
-      --radius-sm: 14px;
-      --container: 1140px;
+      --shadow: 0 18px 60px rgba(22, 60, 41, 0.10);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --container: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Manrope', Arial, sans-serif;
       color: var(--text);
-      background: linear-gradient(to bottom, #f7fcf8 0%, #ffffff 100%);
-      line-height: 1.6;
+      background:
+        radial-gradient(circle at top left, rgba(159,217,169,0.22), transparent 30%),
+        linear-gradient(180deg, #f8fcf8 0%, #f2f8f3 45%, #ffffff 100%);
+      line-height: 1.65;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
     .container {
       width: min(var(--container), calc(100% - 28px));
@@ -69,16 +59,16 @@
     }
 
     .topbar {
-      background: var(--green-900);
-      color: #f3fff5;
-      font-size: 0.95rem;
+      background: linear-gradient(90deg, var(--green-900), var(--green-800));
+      color: rgba(255,255,255,0.92);
+      font-size: 0.92rem;
     }
 
     .topbar-inner {
       display: flex;
-      gap: 14px;
       justify-content: center;
       align-items: center;
+      gap: 14px;
       flex-wrap: wrap;
       padding: 10px 0;
       text-align: center;
@@ -88,9 +78,9 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(31, 77, 44, 0.08);
+      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.82);
+      border-bottom: 1px solid rgba(32,79,53,0.08);
     }
 
     .nav {
@@ -108,48 +98,44 @@
       min-width: 0;
     }
 
-    .brand-badge {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
+    .brand-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, var(--green-700), var(--green-900));
       color: white;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
       box-shadow: var(--shadow);
       flex-shrink: 0;
-    }
-
-    .brand-text {
-      min-width: 0;
     }
 
     .brand-text strong {
       display: block;
       color: var(--green-900);
       font-size: 1rem;
+      line-height: 1.1;
     }
 
     .brand-text span {
-      display: block;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--muted);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 18px;
-      color: var(--muted);
-      font-weight: 600;
+      gap: 22px;
       font-size: 0.95rem;
+      font-weight: 700;
+      color: #34443a;
     }
 
     .nav-actions {
       display: flex;
-      gap: 10px;
       align-items: center;
+      gap: 10px;
     }
 
     .btn {
@@ -157,154 +143,160 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      padding: 13px 18px;
+      padding: 14px 18px;
       border-radius: 999px;
-      font-weight: 700;
+      font-weight: 800;
+      transition: .25s ease;
       border: 1px solid transparent;
-      transition: 0.25s ease;
       cursor: pointer;
       text-align: center;
+      white-space: nowrap;
     }
 
     .btn-primary {
-      background: var(--green-800);
       color: white;
-      box-shadow: var(--shadow);
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
+      box-shadow: 0 14px 34px rgba(32,79,53,0.20);
     }
 
-    .btn-primary:hover {
-      background: var(--green-900);
-      transform: translateY(-1px);
-    }
+    .btn-primary:hover { transform: translateY(-1px); }
 
-    .btn-outline {
-      background: white;
+    .btn-secondary {
+      background: rgba(255,255,255,0.78);
+      border-color: rgba(32,79,53,0.12);
       color: var(--green-900);
-      border-color: var(--border);
     }
 
-    .btn-outline:hover {
-      border-color: var(--green-700);
-      color: var(--green-700);
+    .btn-secondary:hover {
+      background: white;
+      border-color: rgba(32,79,53,0.20);
     }
 
     .hero {
-      padding: 54px 0 34px;
+      padding: 56px 0 34px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 26px;
-      align-items: center;
+      align-items: stretch;
     }
 
-    .eyebrow {
+    .tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--green-100);
-      color: var(--green-900);
+      padding: 10px 14px;
       border-radius: 999px;
-      padding: 9px 14px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(32,79,53,0.10);
+      color: var(--green-900);
+      font-weight: 800;
       font-size: 0.9rem;
-      font-weight: 700;
       margin-bottom: 18px;
+      box-shadow: var(--shadow);
     }
 
     h1 {
       margin: 0 0 16px;
-      font-size: clamp(2.15rem, 4.5vw, 4.3rem);
-      line-height: 1.08;
+      font-size: clamp(2.3rem, 5vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
       color: var(--green-900);
-      letter-spacing: -0.03em;
+      max-width: 750px;
     }
 
     .hero p {
-      font-size: 1.05rem;
-      color: var(--muted);
-      margin: 0 0 22px;
+      margin: 0 0 24px;
       max-width: 720px;
+      color: var(--muted);
+      font-size: 1.06rem;
     }
 
     .hero-actions {
       display: flex;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 12px;
       margin-bottom: 22px;
     }
 
-    .hero-points {
+    .hero-trust {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
     }
 
-    .hero-point {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 14px;
+    .trust-pill {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 16px;
       box-shadow: var(--shadow);
     }
 
-    .hero-point strong {
+    .trust-pill strong {
       display: block;
       color: var(--green-900);
-      margin-bottom: 4px;
       font-size: 1rem;
+      margin-bottom: 3px;
     }
 
-    .hero-card {
-      background:
-        linear-gradient(rgba(18, 54, 29, 0.18), rgba(18, 54, 29, 0.32)),
-        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80') center/cover;
-      min-height: 470px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+      border-radius: var(--radius-xl);
       overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(15,39,27,0.04), rgba(15,39,27,0.45)),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1500&q=80') center/cover;
       display: flex;
-      align-items: end;
+      align-items: flex-end;
       padding: 24px;
     }
 
-    .hero-card-box {
+    .hero-card {
       width: 100%;
-      background: rgba(255, 255, 255, 0.94);
-      border-radius: 18px;
-      padding: 20px;
-      border: 1px solid rgba(47, 107, 59, 0.10);
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(32,79,53,0.10);
+      border-radius: 22px;
+      padding: 22px;
+      backdrop-filter: blur(8px);
     }
 
-    .hero-card-box h2 {
-      margin: 0 0 10px;
+    .hero-card h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
       color: var(--green-900);
-      font-size: 1.3rem;
     }
 
-    .hero-card-list {
+    .hero-list {
+      list-style: none;
       margin: 0;
       padding: 0;
-      list-style: none;
       display: grid;
       gap: 10px;
-      color: var(--text);
+      color: #304236;
+      font-weight: 600;
     }
 
     .section {
-      padding: 38px 0;
+      padding: 42px 0;
     }
 
     .section-head {
       text-align: center;
       max-width: 760px;
-      margin: 0 auto 24px;
+      margin: 0 auto 26px;
     }
 
     .section-head h2 {
       margin: 0 0 10px;
+      font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+      line-height: 1.05;
       color: var(--green-900);
-      font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+      letter-spacing: -0.03em;
     }
 
     .section-head p {
@@ -312,55 +304,41 @@
       color: var(--muted);
     }
 
-    .services-grid,
-    .trust-grid,
-    .reviews-grid,
-    .zone-grid {
+    .grid-3, .grid-4, .grid-2 {
       display: grid;
       gap: 18px;
     }
 
-    .services-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .trust-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .reviews-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .zone-grid {
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
-    }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
 
     .card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
       padding: 24px;
       box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
     }
 
     .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
       display: grid;
       place-items: center;
-      background: var(--green-100);
+      background: linear-gradient(135deg, #eaf7ed, #dff1e3);
       color: var(--green-900);
-      font-size: 1.4rem;
+      font-size: 1.45rem;
       margin-bottom: 14px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
     }
 
     .card h3 {
       margin: 0 0 10px;
-      color: var(--green-900);
       font-size: 1.2rem;
+      color: var(--green-900);
     }
 
     .card p {
@@ -368,61 +346,69 @@
       color: var(--muted);
     }
 
-    .trust-card {
-      text-align: center;
-      padding: 22px 16px;
-    }
-
-    .trust-card strong {
-      display: block;
-      color: var(--green-900);
-      font-size: 1.6rem;
-      margin-bottom: 4px;
-    }
-
-    .zone-list {
+    .check-list {
       list-style: none;
-      margin: 18px 0 0;
+      margin: 14px 0 0;
       padding: 0;
       display: grid;
-      gap: 10px;
-      color: var(--muted);
+      gap: 8px;
+      color: #33443a;
+      font-weight: 600;
     }
+
+    .stat-card {
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 1.8rem;
+      line-height: 1;
+      color: var(--green-900);
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, var(--green-900), var(--green-800));
+      color: white;
+    }
+
+    .highlight h2, .highlight h3, .highlight strong { color: white; }
+    .highlight p, .highlight li { color: rgba(255,255,255,0.88); }
 
     .review-stars {
-      color: #d19f1f;
+      color: #d7a72f;
       letter-spacing: 2px;
-      margin-bottom: 12px;
-      font-size: 1rem;
+      margin-bottom: 10px;
     }
 
-    .review-name {
+    .review-author {
       margin-top: 14px;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--green-900);
-    }
-
-    .cta-section {
-      padding: 18px 0 50px;
     }
 
     .cta-box {
-      background: linear-gradient(135deg, var(--green-900), var(--green-800));
-      color: white;
-      border-radius: 28px;
+      border-radius: 30px;
       padding: 34px 26px;
       box-shadow: var(--shadow);
+      background:
+        radial-gradient(circle at top right, rgba(159,217,169,0.30), transparent 28%),
+        linear-gradient(135deg, var(--green-900), var(--green-800));
+      color: white;
       text-align: center;
     }
 
     .cta-box h2 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+      letter-spacing: -0.03em;
     }
 
     .cta-box p {
-      margin: 0 auto 20px;
       max-width: 760px;
+      margin: 0 auto 20px;
       color: rgba(255,255,255,0.88);
     }
 
@@ -433,81 +419,64 @@
       gap: 12px;
     }
 
-    .cta-box .btn-outline {
-      background: transparent;
-      border-color: rgba(255,255,255,0.35);
+    .cta-box .btn-secondary {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.20);
       color: white;
     }
 
-    .cta-box .btn-outline:hover {
-      background: rgba(255,255,255,0.08);
-    }
-
-    .contact-section {
-      padding-top: 10px;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .contact-list {
+    .contact-list, .zone-list {
       list-style: none;
-      margin: 16px 0 0;
+      margin: 14px 0 0;
       padding: 0;
       display: grid;
-      gap: 12px;
-      color: var(--muted);
+      gap: 10px;
+      color: #33443a;
+      font-weight: 600;
     }
 
-    .contact-list strong {
-      color: var(--green-900);
-    }
+    .contact-list strong, .zone-list strong { color: var(--green-900); }
 
-    .form {
+    .contact-form {
       display: grid;
       gap: 12px;
     }
 
-    .form input,
-    .form textarea {
+    .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 14px 16px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: #fbfefb;
-      color: var(--text);
+      border: 1px solid rgba(32,79,53,0.12);
+      background: rgba(255,255,255,0.95);
+      border-radius: 16px;
+      padding: 15px 16px;
       font: inherit;
+      color: var(--text);
       outline: none;
     }
 
-    .form input:focus,
-    .form textarea:focus {
-      border-color: var(--green-700);
-      box-shadow: 0 0 0 4px rgba(62, 134, 75, 0.10);
-    }
-
-    .form textarea {
-      min-height: 140px;
+    .contact-form textarea {
+      min-height: 150px;
       resize: vertical;
     }
 
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: var(--green-600);
+      box-shadow: 0 0 0 4px rgba(61,140,95,0.10);
+    }
+
     .small-note {
-      margin-top: 10px;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       color: var(--muted);
+      margin-top: 10px;
     }
 
     .footer {
-      padding: 28px 0 90px;
-      color: var(--muted);
-      font-size: 0.95rem;
+      padding: 26px 0 92px;
       text-align: center;
+      color: var(--muted);
+      font-size: 0.94rem;
     }
 
-    .floating-actions {
+    .floaters {
       position: fixed;
       right: 14px;
       bottom: 14px;
@@ -517,86 +486,40 @@
       z-index: 60;
     }
 
-    .floating-btn {
-      width: 56px;
-      height: 56px;
+    .floater {
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       display: grid;
       place-items: center;
       color: white;
-      box-shadow: var(--shadow);
+      box-shadow: 0 14px 34px rgba(22,60,41,0.22);
       font-size: 1.35rem;
     }
 
-    .floating-phone {
-      background: var(--green-900);
-    }
-
-    .floating-wa {
-      background: #1fa855;
-    }
+    .phone { background: linear-gradient(135deg, var(--green-700), var(--green-900)); }
+    .whatsapp { background: linear-gradient(135deg, #2ac566, #149946); }
 
     @media (max-width: 980px) {
-      .hero-grid,
-      .zone-grid,
-      .contact-grid,
-      .services-grid,
-      .reviews-grid,
-      .trust-grid,
-      .hero-points {
+      .hero-grid, .grid-3, .grid-4, .grid-2, .hero-trust {
         grid-template-columns: 1fr;
       }
 
-      .nav-links {
-        display: none;
-      }
-
-      .nav {
-        flex-wrap: wrap;
-      }
-
-      .nav-actions {
-        width: 100%;
-      }
-
-      .nav-actions .btn {
-        flex: 1;
-      }
-
-      .hero-card {
-        min-height: 360px;
-      }
+      .nav-links { display: none; }
+      .nav { flex-wrap: wrap; }
+      .nav-actions { width: 100%; }
+      .nav-actions .btn { flex: 1; }
+      .hero-visual { min-height: 380px; }
     }
 
     @media (max-width: 640px) {
-      .topbar-inner {
-        font-size: 0.85rem;
-      }
-
-      .hero {
-        padding-top: 30px;
-      }
-
-      .section,
-      .cta-section {
-        padding-top: 28px;
-        padding-bottom: 28px;
-      }
-
-      .card,
-      .cta-box {
-        padding: 20px;
-      }
-
-      .floating-actions {
-        right: 10px;
-        bottom: 10px;
-      }
-
-      .floating-btn {
-        width: 52px;
-        height: 52px;
-      }
+      .hero { padding-top: 34px; }
+      .section { padding: 30px 0; }
+      .card, .hero-card, .cta-box { padding: 20px; }
+      .topbar-inner { font-size: 0.84rem; }
+      .brand-text strong { font-size: 0.92rem; }
+      .floaters { right: 10px; bottom: 10px; }
+      .floater { width: 54px; height: 54px; }
     }
   </style>
 </head>
@@ -614,23 +537,23 @@
   <header class="header">
     <div class="container nav">
       <a href="#accueil" class="brand">
-        <div class="brand-badge">🌿</div>
+        <div class="brand-logo">🌿</div>
         <div class="brand-text">
           <strong>Les Services de la Vaucouleurs</strong>
-          <span>Jardinier à Senonches</span>
+          <span>Espaces verts & petit bricolage à Senonches</span>
         </div>
       </a>
 
       <nav class="nav-links">
         <a href="#services">Services</a>
-        <a href="#confiance">Pourquoi nous</a>
-        <a href="#zone">Zone d’intervention</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#zone">Zone</a>
         <a href="#avis">Avis</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-outline" href="tel:0763330326">📞 Appeler</a>
+        <a class="btn btn-secondary" href="tel:0763330326">📞 Appeler</a>
         <a class="btn btn-primary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
       </div>
     </div>
@@ -640,45 +563,41 @@
     <section class="hero" id="accueil">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Jardinier Senonches • Entretien jardin Senonches</div>
-          <h1>Un extérieur propre, entretenu et valorisé sans stress.</h1>
+          <div class="tag">Jardinier Senonches • Entretien jardin Senonches • Espaces verts Eure-et-Loir</div>
+          <h1>Un service pro, rapide et au bon prix pour vos extérieurs.</h1>
           <p>
-            Les Services de la Vaucouleurs accompagnent les particuliers pour
-            l’entretien de jardin, la création d’espaces verts et le petit bricolage à
-            Senonches et dans les alentours. Vous cherchez un professionnel sérieux,
-            réactif et au bon prix ? Vous êtes au bon endroit.
+            Les Services de la Vaucouleurs accompagnent les particuliers à Senonches et dans un rayon d’environ 20 km pour l’entretien de jardin, la création d’espaces verts et le petit bricolage. Vous cherchez quelqu’un de sérieux, local et efficace ? Ici, vous avez un interlocuteur fiable, expérimenté et facile à joindre.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:0763330326">📞 Demander un devis</a>
-            <a class="btn btn-outline" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Écrire sur WhatsApp</a>
+            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Écrire sur WhatsApp</a>
           </div>
 
-          <div class="hero-points">
-            <div class="hero-point">
+          <div class="hero-trust">
+            <div class="trust-pill">
               <strong>25 ans d’expérience</strong>
               <span>Dont 10 ans à mon compte</span>
             </div>
-            <div class="hero-point">
-              <strong>Bon prix</strong>
-              <span>Avec qualité professionnelle</span>
+            <div class="trust-pill">
+              <strong>Qualité professionnelle</strong>
+              <span>Travail propre et soigné</span>
             </div>
-            <div class="hero-point">
-              <strong>Rapidité</strong>
-              <span>Réponse et intervention efficaces</span>
+            <div class="trust-pill">
+              <strong>Intervention rapide</strong>
+              <span>Contact simple et devis gratuit</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="hero-card-box">
-            <h2>Vos besoins, notre solution</h2>
-            <ul class="hero-card-list">
-              <li>✔ Entretien régulier de jardin</li>
-              <li>✔ Tonte, taille, nettoyage, remise en état</li>
-              <li>✔ Création et amélioration d’espaces verts</li>
-              <li>✔ Petit bricolage pour particuliers</li>
-              <li>✔ Devis gratuit et contact simple</li>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <h2>Ce que vous gagnez</h2>
+            <ul class="hero-list">
+              <li>✔ Un jardin propre et entretenu sans contrainte</li>
+              <li>✔ Un professionnel local réactif et disponible</li>
+              <li>✔ Des prestations utiles, claires et au juste prix</li>
+              <li>✔ Un seul contact pour le jardinage, l’entretien et le petit bricolage</li>
             </ul>
           </div>
         </div>
@@ -688,119 +607,117 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
-          <h2>Des prestations claires, utiles et efficaces</h2>
+          <h2>Des prestations complètes pour vos extérieurs</h2>
           <p>
-            Pour garder un extérieur propre, agréable et bien entretenu toute l’année,
-            sans perdre de temps.
+            Une page claire, un message rassurant et des services présentés comme un vrai professionnel local. Tout est pensé pour inspirer confiance et donner envie de vous contacter.
           </p>
         </div>
 
-        <div class="services-grid">
+        <div class="grid-3">
           <article class="card">
             <div class="icon">🌱</div>
-            <h3>Jardinage et entretien</h3>
+            <h3>Jardinage & entretien</h3>
             <p>
-              Tonte, taille, entretien courant, nettoyage, remise en état et suivi régulier
-              de vos extérieurs. Idéal pour garder un jardin propre sans contrainte.
+              Tonte, taille, entretien courant, nettoyage de terrain, remise en état et suivi régulier de vos extérieurs pour garder un jardin propre toute l’année.
             </p>
+            <ul class="check-list">
+              <li>• Tonte de pelouse</li>
+              <li>• Taille et entretien</li>
+              <li>• Nettoyage extérieur</li>
+            </ul>
           </article>
 
           <article class="card">
             <div class="icon">🌳</div>
             <h3>Création d’espaces verts</h3>
             <p>
-              Aménagement extérieur, mise en valeur de jardin, plantations et amélioration
-              de vos espaces verts selon votre besoin et votre budget.
+              Mise en valeur du jardin, amélioration visuelle des extérieurs, plantations et aménagements simples pour un rendu plus agréable et harmonieux.
             </p>
+            <ul class="check-list">
+              <li>• Aménagement extérieur</li>
+              <li>• Mise en valeur du jardin</li>
+              <li>• Création selon vos besoins</li>
+            </ul>
           </article>
 
           <article class="card">
             <div class="icon">🛠️</div>
             <h3>Petit bricolage</h3>
             <p>
-              Petits travaux pratiques pour particuliers avec une approche sérieuse,
-              propre et réactive, pour vous simplifier la vie au quotidien.
+              Petits travaux pratiques pour particuliers avec sérieux, ponctualité et efficacité. Un service utile pour vous faire gagner du temps au quotidien.
             </p>
+            <ul class="check-list">
+              <li>• Aide aux petits travaux</li>
+              <li>• Service simple et rapide</li>
+              <li>• Intervention locale</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="confiance">
+    <section class="section" id="avantages">
       <div class="container">
         <div class="section-head">
-          <h2>Pourquoi faire appel à nous ?</h2>
+          <h2>Pourquoi choisir Les Services de la Vaucouleurs ?</h2>
           <p>
-            Parce qu’un bon artisan local, c’est avant tout un service fiable, humain,
-            bien fait et facile à contacter.
+            Parce qu’au-delà du service, les gens recherchent surtout quelqu’un de fiable, expérimenté, local et facile à joindre.
           </p>
         </div>
 
-        <div class="trust-grid">
-          <div class="card trust-card">
+        <div class="grid-4">
+          <div class="card stat-card">
             <strong>25 ans</strong>
             <span>d’expérience métier</span>
           </div>
-          <div class="card trust-card">
+          <div class="card stat-card">
             <strong>10 ans</strong>
             <span>à mon compte</span>
           </div>
-          <div class="card trust-card">
-            <strong>100%</strong>
-            <span>devis gratuit</span>
+          <div class="card stat-card">
+            <strong>Devis gratuit</strong>
+            <span>et réponse rapide</span>
           </div>
-          <div class="card trust-card">
-            <strong>Pro</strong>
-            <span>matériel adapté</span>
+          <div class="card stat-card">
+            <strong>Matériel pro</strong>
+            <span>pour un travail sérieux</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="zone">
-      <div class="container">
-        <div class="zone-grid">
-          <div class="card">
-            <div class="section-head" style="text-align:left; margin:0 0 12px;">
-              <h2>Zone d’intervention</h2>
-              <p>
-                Intervention locale pour plus de proximité, de rapidité et de simplicité.
-              </p>
-            </div>
-
-            <p style="margin:0; color:var(--muted);">
-              Basé à <strong style="color:var(--green-900);">Senonches</strong>, j’interviens
-              dans un rayon d’environ 20 km pour les particuliers.
+      <div class="container grid-2">
+        <div class="card">
+          <div class="section-head" style="text-align:left; margin:0 0 12px;">
+            <h2>Zone d’intervention</h2>
+            <p>
+              Un service local inspire plus confiance, permet d’être réactif et rassure immédiatement les particuliers.
             </p>
-
-            <ul class="zone-list">
-              <li>📍 Senonches</li>
-              <li>📍 Alentours et communes voisines</li>
-              <li>📍 Secteur Eure-et-Loir</li>
-              <li>📍 Déplacement local pour un service réactif</li>
-            </ul>
           </div>
 
-          <div class="card">
-            <div class="section-head" style="text-align:left; margin:0 0 12px;">
-              <h2>SEO local renforcé</h2>
-              <p>
-                Cette page est pensée pour ressortir sur les recherches locales liées aux
-                espaces verts Eure-et-Loir.
-              </p>
-            </div>
+          <ul class="zone-list">
+            <li><strong>Base :</strong> Senonches</li>
+            <li><strong>Secteur :</strong> environ 20 km autour</li>
+            <li><strong>Clientèle :</strong> particuliers</li>
+            <li><strong>Déplacement :</strong> local, rapide et pratique</li>
+          </ul>
+        </div>
 
-            <p style="margin:0 0 10px; color:var(--muted);">
-              Recherches visées :
+        <div class="card highlight">
+          <div class="section-head" style="text-align:left; margin:0 0 12px;">
+            <h2>Une page pensée pour attirer des clients</h2>
+            <p>
+              Le contenu met en avant les recherches locales importantes et les bons arguments marketing : proximité, confiance, qualité et rapidité.
             </p>
-
-            <ul class="zone-list" style="margin-top:0;">
-              <li>🔎 jardinier Senonches</li>
-              <li>🔎 entretien jardin Senonches</li>
-              <li>🔎 espaces verts Eure-et-Loir</li>
-              <li>🔎 création jardin Senonches</li>
-            </ul>
           </div>
+
+          <ul class="zone-list">
+            <li>• jardinier Senonches</li>
+            <li>• entretien jardin Senonches</li>
+            <li>• espaces verts Eure-et-Loir</li>
+            <li>• petit bricolage Senonches</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -808,101 +725,95 @@
     <section class="section" id="avis">
       <div class="container">
         <div class="section-head">
-          <h2>Ils nous ont fait confiance</h2>
+          <h2>Des avis qui rassurent</h2>
           <p>
-            Tu pourras remplacer ces avis plus tard par de vrais retours clients.
+            En attendant tes vrais retours clients, on garde des avis de présentation pour donner de la crédibilité à la page.
           </p>
         </div>
 
-        <div class="reviews-grid">
+        <div class="grid-3">
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Travail sérieux, rapide et propre. Très bon contact et tarif correct.
-              Je recommande sans hésiter.
+              Travail sérieux, propre et rapide. Très bon contact, devis simple et résultat à la hauteur. Je recommande.
             </p>
-            <div class="review-name">— Client à Senonches</div>
+            <div class="review-author">— Cliente à Senonches</div>
           </article>
 
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Intervention efficace pour remettre le jardin en état. Personne fiable
-              et professionnelle. Devis clair.
+              Intervention efficace pour remettre le jardin en état. Personne fiable, ponctuelle et professionnelle.
             </p>
-            <div class="review-name">— Cliente du secteur</div>
+            <div class="review-author">— Client du secteur</div>
           </article>
 
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Très satisfait du résultat. Réactif, ponctuel et soigneux. C’est rassurant
-              d’avoir un artisan local compétent.
+              Très satisfait du service. Rapide, poli et appliqué. C’est rassurant d’avoir un artisan local compétent.
             </p>
-            <div class="review-name">— Particulier, Eure-et-Loir</div>
+            <div class="review-author">— Particulier, Eure-et-Loir</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
+    <section class="section">
       <div class="container">
         <div class="cta-box">
           <h2>Besoin d’un jardinier à Senonches ?</h2>
           <p>
-            Pour un entretien ponctuel, un suivi régulier, une création d’espace vert
-            ou un petit bricolage, contactez Les Services de la Vaucouleurs dès maintenant.
+            Pour un entretien ponctuel, un suivi régulier, une création d’espace vert ou un petit bricolage, contacte Les Services de la Vaucouleurs dès maintenant.
           </p>
           <div class="cta-actions">
             <a class="btn btn-primary" href="tel:0763330326">📞 Appeler maintenant</a>
-            <a class="btn btn-outline" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Envoyer un message WhatsApp</a>
+            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Envoyer un message WhatsApp</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="card">
-            <div class="section-head" style="text-align:left; margin:0 0 12px;">
-              <h2>Contact rapide</h2>
-              <p>
-                Le plus simple pour avancer vite : un appel ou un message WhatsApp.
-              </p>
-            </div>
-
-            <ul class="contact-list">
-              <li><strong>Entreprise :</strong> Les Services de la Vaucouleurs</li>
-              <li><strong>Téléphone :</strong> <a href="tel:0763330326">07 63 33 03 26</a></li>
-              <li><strong>Email :</strong> <a href="mailto:servicesvaucouleurs@gmail.com">servicesvaucouleurs@gmail.com</a></li>
-              <li><strong>WhatsApp :</strong> <a href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">Contacter directement</a></li>
-              <li><strong>Zone :</strong> Senonches et 20 km autour</li>
-            </ul>
-
-            <p class="small-note">
-              Astuce : ajoute ensuite de vraies photos de chantier et d’avant/après pour
-              augmenter encore la confiance et les demandes de devis.
+    <section class="section" id="contact">
+      <div class="container grid-2">
+        <div class="card">
+          <div class="section-head" style="text-align:left; margin:0 0 12px;">
+            <h2>Contact rapide</h2>
+            <p>
+              Sur mobile, l’objectif est simple : appeler en un clic ou envoyer un message WhatsApp en quelques secondes.
             </p>
           </div>
 
-          <div class="card">
-            <div class="section-head" style="text-align:left; margin:0 0 12px;">
-              <h2>Demande de devis</h2>
-              <p>
-                Formulaire visuel simple. Plus tard, on pourra le connecter à un vrai envoi.
-              </p>
-            </div>
+          <ul class="contact-list">
+            <li><strong>Entreprise :</strong> Les Services de la Vaucouleurs</li>
+            <li><strong>Téléphone :</strong> <a href="tel:0763330326">07 63 33 03 26</a></li>
+            <li><strong>Email :</strong> <a href="mailto:servicesvaucouleurs@gmail.com">servicesvaucouleurs@gmail.com</a></li>
+            <li><strong>WhatsApp :</strong> <a href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">Contacter directement</a></li>
+            <li><strong>Localisation :</strong> Senonches</li>
+            <li><strong>Zone :</strong> 20 km autour</li>
+          </ul>
 
-            <form class="form">
-              <input type="text" placeholder="Votre nom" />
-              <input type="text" placeholder="Votre ville" />
-              <input type="tel" placeholder="Votre téléphone" />
-              <input type="email" placeholder="Votre email" />
-              <textarea placeholder="Décrivez votre besoin : entretien, tonte, taille, création, petit bricolage..."></textarea>
-              <a class="btn btn-primary" href="tel:0763330326">📞 Appeler pour un devis</a>
-            </form>
+          <p class="small-note">
+            Étape suivante recommandée : intégrer tes vraies photos de chantier, du avant/après et plus tard une carte Google.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="section-head" style="text-align:left; margin:0 0 12px;">
+            <h2>Demande de devis</h2>
+            <p>
+              Ce bloc est déjà prêt visuellement. Plus tard, on pourra le connecter à un vrai formulaire si besoin.
+            </p>
           </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Votre nom" />
+            <input type="text" placeholder="Votre ville" />
+            <input type="tel" placeholder="Votre téléphone" />
+            <input type="email" placeholder="Votre email" />
+            <textarea placeholder="Décrivez votre besoin : tonte, taille, entretien, création d’espaces verts, petit bricolage..."></textarea>
+            <a class="btn btn-primary" href="tel:0763330326">📞 Appeler pour un devis gratuit</a>
+          </form>
         </div>
       </div>
     </section>
@@ -914,9 +825,9 @@
     </div>
   </footer>
 
-  <div class="floating-actions">
-    <a class="floating-btn floating-phone" href="tel:0763330326" aria-label="Appeler">📞</a>
-    <a class="floating-btn floating-wa" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+  <div class="floaters">
+    <a class="floater phone" href="tel:0763330326" aria-label="Appeler">📞</a>
+    <a class="floater whatsapp" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
   </div>
 </body>
 </html>
