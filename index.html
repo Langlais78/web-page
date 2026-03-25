@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Les Services de la Vaucouleurs | Jardinier à Senonches</title>
-  <meta name="description" content="Les Services de la Vaucouleurs à Senonches : entretien de jardin, tonte, taille, création d’espaces verts et petit bricolage. Devis gratuit, intervention rapide, 25 ans d’expérience." />
-  <meta name="keywords" content="jardinier Senonches, entretien jardin Senonches, espaces verts Eure-et-Loir, tonte pelouse Senonches, taille haie Senonches, petit bricolage Senonches" />
-  <meta name="theme-color" content="#204f35" />
+  <title>Jardinier à Senonches | Les Services de la Vaucouleurs</title>
+  <meta name="description" content="Les Services de la Vaucouleurs, jardinier à Senonches : entretien de jardin, tonte, taille de haies, création d’espaces verts et petit bricolage. Devis gratuit, intervention rapide, 25 ans d’expérience." />
+  <meta name="keywords" content="jardinier Senonches, entretien jardin Senonches, espaces verts Eure-et-Loir, tonte pelouse Senonches, taille haies Senonches, petit bricolage Senonches" />
+  <meta name="theme-color" content="#1f4f34" />
   <meta property="og:title" content="Les Services de la Vaucouleurs | Jardinier à Senonches" />
-  <meta property="og:description" content="Entretien de jardin, création d’espaces verts et petit bricolage à Senonches et 20 km autour. Devis gratuit et intervention rapide." />
+  <meta property="og:description" content="Entretien de jardin, espaces verts et petit bricolage à Senonches et 20 km autour. Devis gratuit, intervention rapide." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +16,31 @@
   <style>
     :root {
       --bg: #f6faf7;
-      --bg-soft: #eef7f0;
-      --card: rgba(255,255,255,0.88);
-      --card-solid: #ffffff;
-      --text: #122018;
-      --muted: #5d6c63;
-      --line: rgba(32, 79, 53, 0.10);
-      --green-900: #163c29;
-      --green-800: #204f35;
-      --green-700: #2c6b47;
-      --green-600: #3d8c5f;
-      --green-100: #e6f3ea;
-      --accent: #9fd9a9;
+      --bg-soft: #edf6ef;
       --white: #ffffff;
-      --shadow: 0 18px 60px rgba(22, 60, 41, 0.10);
-      --radius-xl: 28px;
+      --text: #132018;
+      --muted: #5f6f65;
+      --green-900: #163d2a;
+      --green-800: #1f4f34;
+      --green-700: #2d6d49;
+      --green-600: #3d8c61;
+      --green-100: #e6f3ea;
+      --line: rgba(22, 61, 42, 0.10);
+      --shadow: 0 18px 60px rgba(22, 61, 42, 0.10);
+      --radius-xl: 30px;
       --radius-lg: 22px;
       --radius-md: 16px;
       --container: 1180px;
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: 'Manrope', Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(159,217,169,0.22), transparent 30%),
+        radial-gradient(circle at top left, rgba(61,140,97,0.12), transparent 30%),
         linear-gradient(180deg, #f8fcf8 0%, #f2f8f3 45%, #ffffff 100%);
       line-height: 1.65;
     }
@@ -79,8 +74,8 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(14px);
-      background: rgba(255,255,255,0.82);
-      border-bottom: 1px solid rgba(32,79,53,0.08);
+      background: rgba(255,255,255,0.84);
+      border-bottom: 1px solid rgba(22, 61, 42, 0.08);
     }
 
     .nav {
@@ -156,20 +151,20 @@
     .btn-primary {
       color: white;
       background: linear-gradient(135deg, var(--green-700), var(--green-900));
-      box-shadow: 0 14px 34px rgba(32,79,53,0.20);
+      box-shadow: 0 14px 34px rgba(31,79,52,0.20);
     }
 
     .btn-primary:hover { transform: translateY(-1px); }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.78);
-      border-color: rgba(32,79,53,0.12);
+      background: rgba(255,255,255,0.90);
+      border-color: rgba(22,61,42,0.12);
       color: var(--green-900);
     }
 
     .btn-secondary:hover {
       background: white;
-      border-color: rgba(32,79,53,0.20);
+      border-color: rgba(22,61,42,0.20);
     }
 
     .hero {
@@ -189,8 +184,8 @@
       gap: 8px;
       padding: 10px 14px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.78);
-      border: 1px solid rgba(32,79,53,0.10);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(22,61,42,0.10);
       color: var(--green-900);
       font-weight: 800;
       font-size: 0.9rem;
@@ -204,14 +199,33 @@
       line-height: 0.98;
       letter-spacing: -0.04em;
       color: var(--green-900);
-      max-width: 750px;
+      max-width: 780px;
     }
 
     .hero p {
-      margin: 0 0 24px;
-      max-width: 720px;
+      margin: 0 0 20px;
+      max-width: 740px;
       color: var(--muted);
       font-size: 1.06rem;
+    }
+
+    .hero-mini-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green-100);
+      color: var(--green-900);
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 800;
     }
 
     .hero-actions {
@@ -228,7 +242,7 @@
     }
 
     .trust-pill {
-      background: rgba(255,255,255,0.9);
+      background: rgba(255,255,255,0.92);
       border: 1px solid var(--line);
       border-radius: var(--radius-md);
       padding: 16px;
@@ -249,7 +263,7 @@
       overflow: hidden;
       box-shadow: var(--shadow);
       background:
-        linear-gradient(180deg, rgba(15,39,27,0.04), rgba(15,39,27,0.45)),
+        linear-gradient(180deg, rgba(15,39,27,0.08), rgba(15,39,27,0.45)),
         url('images/hero-jardin.jpg') center/cover;
       display: flex;
       align-items: flex-end;
@@ -259,7 +273,7 @@
     .hero-card {
       width: 100%;
       background: rgba(255,255,255,0.92);
-      border: 1px solid rgba(32,79,53,0.10);
+      border: 1px solid rgba(22,61,42,0.10);
       border-radius: 22px;
       padding: 22px;
       backdrop-filter: blur(8px);
@@ -287,7 +301,7 @@
 
     .section-head {
       text-align: center;
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto 26px;
     }
 
@@ -304,17 +318,17 @@
       color: var(--muted);
     }
 
-    .grid-3, .grid-4, .grid-2 {
+    .grid-2, .grid-3, .grid-4 {
       display: grid;
       gap: 18px;
     }
 
+    .grid-2 { grid-template-columns: 1fr 1fr; }
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-4 { grid-template-columns: repeat(4, 1fr); }
-    .grid-2 { grid-template-columns: 1fr 1fr; }
 
     .card {
-      background: var(--card);
+      background: rgba(255,255,255,0.92);
       border: 1px solid var(--line);
       border-radius: var(--radius-lg);
       padding: 24px;
@@ -374,8 +388,13 @@
       color: white;
     }
 
-    .highlight h2, .highlight h3, .highlight strong { color: white; }
-    .highlight p, .highlight li { color: rgba(255,255,255,0.88); }
+    .highlight h2,
+    .highlight h3,
+    .highlight strong { color: white; }
+
+    .highlight p,
+    .highlight li,
+    .highlight a { color: rgba(255,255,255,0.88); }
 
     .review-stars {
       color: #d7a72f;
@@ -389,116 +408,16 @@
       color: var(--green-900);
     }
 
-    .cta-box {
-      border-radius: 30px;
-      padding: 34px 26px;
-      box-shadow: var(--shadow);
-      background:
-        radial-gradient(circle at top right, rgba(159,217,169,0.30), transparent 28%),
-        linear-gradient(135deg, var(--green-900), var(--green-800));
-      color: white;
-      text-align: center;
+    .gallery-card {
+      padding: 10px;
     }
 
-    .cta-box h2 {
-      margin: 0 0 10px;
-      font-size: clamp(1.9rem, 3.2vw, 3rem);
-      letter-spacing: -0.03em;
-    }
-
-    .cta-box p {
-      max-width: 760px;
-      margin: 0 auto 20px;
-      color: rgba(255,255,255,0.88);
-    }
-
-    .cta-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .cta-box .btn-secondary {
-      background: rgba(255,255,255,0.10);
-      border-color: rgba(255,255,255,0.20);
-      color: white;
-    }
-
-    .contact-list, .zone-list {
-      list-style: none;
-      margin: 14px 0 0;
-      padding: 0;
-      display: grid;
-      gap: 10px;
-      color: #33443a;
-      font-weight: 600;
-    }
-
-    .contact-list strong, .zone-list strong { color: var(--green-900); }
-
-    .contact-form {
-      display: grid;
-      gap: 12px;
-    }
-
-    .contact-form input, .contact-form textarea {
+    .gallery-card img {
       width: 100%;
-      border: 1px solid rgba(32,79,53,0.12);
-      background: rgba(255,255,255,0.95);
       border-radius: 16px;
-      padding: 15px 16px;
-      font: inherit;
-      color: var(--text);
-      outline: none;
+      min-height: 230px;
+      object-fit: cover;
     }
-
-    .contact-form textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-
-    .contact-form input:focus, .contact-form textarea:focus {
-      border-color: var(--green-600);
-      box-shadow: 0 0 0 4px rgba(61,140,95,0.10);
-    }
-
-    .small-note {
-      font-size: 0.92rem;
-      color: var(--muted);
-      margin-top: 10px;
-    }
-
-    .footer {
-      padding: 26px 0 92px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .floaters {
-      position: fixed;
-      right: 14px;
-      bottom: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 60;
-    }
-
-    .floater {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: white;
-      box-shadow: 0 14px 34px rgba(22,60,41,0.22);
-      font-size: 1.35rem;
-    }
-
-    .phone { background: linear-gradient(135deg, var(--green-700), var(--green-900)); }
-    .whatsapp { background: linear-gradient(135deg, #2ac566, #149946); }
 
     .before-after-carousel {
       position: relative;
@@ -527,7 +446,7 @@
       overflow: hidden;
       border-radius: 18px;
       margin-top: 14px;
-      border: 1px solid rgba(32,79,53,0.08);
+      border: 1px solid rgba(22,61,42,0.08);
       background: #f1f6f2;
     }
 
@@ -576,7 +495,7 @@
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      border: 1px solid rgba(32,79,53,0.12);
+      border: 1px solid rgba(22,61,42,0.12);
       background: rgba(255,255,255,0.92);
       color: var(--green-900);
       font-size: 1.15rem;
@@ -596,7 +515,7 @@
       height: 10px;
       border-radius: 999px;
       border: none;
-      background: rgba(32,79,53,0.18);
+      background: rgba(22,61,42,0.18);
       cursor: pointer;
       transition: .25s ease;
       padding: 0;
@@ -607,8 +526,128 @@
       background: linear-gradient(135deg, var(--green-700), var(--green-900));
     }
 
+    .cta-box {
+      border-radius: 30px;
+      padding: 34px 26px;
+      box-shadow: var(--shadow);
+      background:
+        radial-gradient(circle at top right, rgba(61,140,97,0.30), transparent 28%),
+        linear-gradient(135deg, var(--green-900), var(--green-800));
+      color: white;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+      letter-spacing: -0.03em;
+    }
+
+    .cta-box p {
+      max-width: 760px;
+      margin: 0 auto 20px;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta-box .btn-secondary {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.20);
+      color: white;
+    }
+
+    .contact-list,
+    .zone-list {
+      list-style: none;
+      margin: 14px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: #33443a;
+      font-weight: 600;
+    }
+
+    .contact-list strong,
+    .zone-list strong { color: var(--green-900); }
+
+    .contact-form {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid rgba(22,61,42,0.12);
+      background: rgba(255,255,255,0.95);
+      border-radius: 16px;
+      padding: 15px 16px;
+      font: inherit;
+      color: var(--text);
+      outline: none;
+    }
+
+    .contact-form textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--green-600);
+      box-shadow: 0 0 0 4px rgba(61,140,97,0.10);
+    }
+
+    .small-note {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .footer {
+      padding: 26px 0 92px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .floaters {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 60;
+    }
+
+    .floater {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      box-shadow: 0 14px 34px rgba(22,61,42,0.22);
+      font-size: 1.35rem;
+    }
+
+    .phone { background: linear-gradient(135deg, var(--green-700), var(--green-900)); }
+    .whatsapp { background: linear-gradient(135deg, #2ac566, #149946); }
+
     @media (max-width: 980px) {
-      .hero-grid, .grid-3, .grid-4, .grid-2, .hero-trust, .before-after-grid {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .hero-trust,
+      .before-after-grid {
         grid-template-columns: 1fr;
       }
 
@@ -653,7 +692,7 @@
 
       <nav class="nav-links">
         <a href="#services">Services</a>
-        <a href="#avantages">Avantages</a>
+        <a href="#avantages">Pourquoi nous choisir</a>
         <a href="#zone">Zone</a>
         <a href="#avis">Avis</a>
         <a href="#contact">Contact</a>
@@ -671,18 +710,22 @@
       <div class="container hero-grid">
         <div>
           <div class="tag">Jardinier Senonches • Entretien jardin Senonches • Espaces verts Eure-et-Loir</div>
-          <h1>Un service pro, rapide et au bon prix pour vos extérieurs.</h1>
-          <p>Les Services de la Vaucouleurs accompagnent les particuliers à Senonches et dans un rayon d’environ 20 km pour l’entretien de jardin, la création d’espaces verts et le petit bricolage. Vous cherchez quelqu’un de sérieux, local et efficace ? Ici, vous avez un interlocuteur fiable, expérimenté et facile à joindre, avec une approche simple : travail soigné, bon prix et intervention rapide.</p>
 
-          <div class="hero-actions" style="margin-top:-4px; margin-bottom:18px;">
-            <span class="tag" style="margin:0; font-size:0.82rem; padding:8px 12px;">⭐ Artisan local</span>
-            <span class="tag" style="margin:0; font-size:0.82rem; padding:8px 12px;">✅ Devis gratuit</span>
-            <span class="tag" style="margin:0; font-size:0.82rem; padding:8px 12px;">⚡ Réponse rapide</span>
+          <h1>Votre jardin mérite mieux qu’un extérieur laissé de côté.</h1>
+
+          <p>
+            Vous manquez de temps, votre jardin a besoin d’un vrai coup de propre, ou vous voulez simplement un extérieur plus agréable à vivre ? Les Services de la Vaucouleurs vous accompagnent à Senonches et dans un rayon d’environ 20 km pour l’entretien de jardin, la création d’espaces verts et le petit bricolage, avec une promesse simple : un travail soigné, un bon prix et une intervention rapide.
+          </p>
+
+          <div class="hero-mini-badges">
+            <span class="mini-badge">⭐ Artisan local</span>
+            <span class="mini-badge">✅ 25 ans d’expérience</span>
+            <span class="mini-badge">⚡ Réponse rapide</span>
           </div>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:0763330326">📞 Demander un devis</a>
-            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Écrire sur WhatsApp</a>
+            <a class="btn btn-primary" href="tel:0763330326">📞 Appeler maintenant</a>
+            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Demander un devis sur WhatsApp</a>
           </div>
 
           <div class="hero-trust">
@@ -692,7 +735,7 @@
             </div>
             <div class="trust-pill">
               <strong>Qualité professionnelle</strong>
-              <span>Travail propre et soigné</span>
+              <span>Travail propre et sérieux</span>
             </div>
             <div class="trust-pill">
               <strong>Intervention rapide</strong>
@@ -703,12 +746,12 @@
 
         <div class="hero-visual">
           <div class="hero-card">
-            <h2>Ce que vous gagnez</h2>
+            <h2>Ce que vous gagnez concrètement</h2>
             <ul class="hero-list">
-              <li>✔ Un jardin propre et entretenu sans contrainte</li>
-              <li>✔ Un professionnel local réactif et disponible</li>
+              <li>✔ Un jardin propre et entretenu sans y passer vos week-ends</li>
+              <li>✔ Un professionnel local facile à joindre et réactif</li>
               <li>✔ Des prestations utiles, claires et au juste prix</li>
-              <li>✔ Un seul contact pour le jardinage, l’entretien et le petit bricolage</li>
+              <li>✔ Un seul contact pour l’entretien, l’amélioration extérieure et le petit bricolage</li>
             </ul>
           </div>
         </div>
@@ -718,9 +761,9 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
-          <h2>Des prestations complètes pour vos extérieurs</h2>
+          <h2>Des services clairs pour remettre vos extérieurs en valeur</h2>
           <p>
-            Une page claire, un message rassurant et des services présentés comme un vrai professionnel local. Tout est pensé pour inspirer confiance et donner envie de vous contacter.
+            Que votre jardin demande un entretien régulier, une remise en état ou une amélioration visuelle, vous avez ici une solution simple, locale et professionnelle.
           </p>
         </div>
 
@@ -729,12 +772,12 @@
             <div class="icon">🌱</div>
             <h3>Jardinage & entretien</h3>
             <p>
-              Tonte, taille, entretien courant, nettoyage de terrain, remise en état et suivi régulier de vos extérieurs pour garder un jardin propre toute l’année.
+              Quand l’herbe monte, que les haies débordent ou que le jardin perd en propreté, il faut agir vite. Nous assurons l’entretien jardin Senonches avec un service sérieux, propre et régulier.
             </p>
             <ul class="check-list">
               <li>• Tonte de pelouse</li>
-              <li>• Taille et entretien</li>
-              <li>• Nettoyage extérieur</li>
+              <li>• Taille de haies et entretien</li>
+              <li>• Nettoyage et remise en état</li>
             </ul>
           </article>
 
@@ -742,11 +785,11 @@
             <div class="icon">🌳</div>
             <h3>Création d’espaces verts</h3>
             <p>
-              Mise en valeur du jardin, amélioration visuelle des extérieurs, plantations et aménagements simples pour un rendu plus agréable et harmonieux.
+              Vous voulez un extérieur plus agréable, mieux organisé ou plus harmonieux ? Nous vous aidons à améliorer vos espaces verts Eure-et-Loir avec des solutions adaptées à votre terrain et à votre budget.
             </p>
             <ul class="check-list">
-              <li>• Aménagement extérieur</li>
               <li>• Mise en valeur du jardin</li>
+              <li>• Aménagement extérieur</li>
               <li>• Création selon vos besoins</li>
             </ul>
           </article>
@@ -755,12 +798,12 @@
             <div class="icon">🛠️</div>
             <h3>Petit bricolage</h3>
             <p>
-              Petits travaux pratiques pour particuliers avec sérieux, ponctualité et efficacité. Un service utile pour vous faire gagner du temps au quotidien.
+              Pour les petits travaux du quotidien, mieux vaut un interlocuteur fiable et réactif. Nous intervenons chez les particuliers pour vous faire gagner du temps avec un service simple et efficace.
             </p>
             <ul class="check-list">
-              <li>• Aide aux petits travaux</li>
-              <li>• Service simple et rapide</li>
-              <li>• Intervention locale</li>
+              <li>• Petits travaux pratiques</li>
+              <li>• Intervention locale rapide</li>
+              <li>• Service propre et appliqué</li>
             </ul>
           </article>
         </div>
@@ -772,7 +815,7 @@
         <div class="section-head">
           <h2>Pourquoi choisir Les Services de la Vaucouleurs ?</h2>
           <p>
-            Parce qu’au-delà du service, les gens recherchent surtout quelqu’un de fiable, expérimenté, local et facile à joindre.
+            Parce qu’au-delà d’une prestation, vous cherchez surtout quelqu’un de sérieux, expérimenté, local et rassurant.
           </p>
         </div>
 
@@ -791,8 +834,48 @@
           </div>
           <div class="card stat-card">
             <strong>Matériel pro</strong>
-            <span>pour un travail sérieux</span>
+            <span>pour un vrai travail soigné</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Un service humain et direct</h3>
+          <p>
+            Ici, pas de plateforme compliquée ni d’intermédiaire. Vous échangez directement avec un professionnel de terrain, qui comprend vos besoins et vous répond clairement.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💶</div>
+          <h3>Le bon équilibre entre prix et qualité</h3>
+          <p>
+            L’objectif n’est pas de faire “le moins cher à tout prix”, mais de proposer un bon prix avec une vraie qualité professionnelle. C’est ce qui fait la différence sur la durée.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quelques réalisations</h2>
+          <p>
+            Ajoutez ici vos vraies photos de chantiers pour renforcer la confiance et montrer immédiatement la qualité du travail.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card gallery-card"><img src="images/jardin-1.jpg" alt="Entretien jardin Senonches"></div>
+          <div class="card gallery-card"><img src="images/jardin-2.jpg" alt="Tonte pelouse Senonches"></div>
+          <div class="card gallery-card"><img src="images/jardin-3.jpg" alt="Taille haie Senonches"></div>
+          <div class="card gallery-card"><img src="images/jardin-4.jpg" alt="Création espace vert Eure-et-Loir"></div>
+          <div class="card gallery-card"><img src="images/jardin-5.jpg" alt="Avant après jardin"></div>
+          <div class="card gallery-card"><img src="images/jardin-6.jpg" alt="Petit bricolage extérieur"></div>
         </div>
       </div>
     </section>
@@ -801,25 +884,25 @@
       <div class="container grid-2">
         <div class="card">
           <div class="section-head" style="text-align:left; margin:0 0 12px;">
-            <h2>Zone d’intervention</h2>
+            <h2>Votre jardinier à Senonches et alentours</h2>
             <p>
-              Un service local inspire plus confiance, permet d’être réactif et rassure immédiatement les particuliers.
+              Un professionnel local inspire plus confiance, intervient plus vite et comprend mieux les attentes des particuliers du secteur.
             </p>
           </div>
 
           <ul class="zone-list">
             <li><strong>Base :</strong> Senonches</li>
-            <li><strong>Secteur :</strong> environ 20 km autour</li>
+            <li><strong>Zone :</strong> environ 20 km autour</li>
             <li><strong>Clientèle :</strong> particuliers</li>
-            <li><strong>Déplacement :</strong> local, rapide et pratique</li>
+            <li><strong>Prestations :</strong> entretien de jardin, espaces verts, petit bricolage</li>
           </ul>
         </div>
 
         <div class="card highlight">
           <div class="section-head" style="text-align:left; margin:0 0 12px;">
-            <h2>Une page pensée pour attirer des clients</h2>
+            <h2>Une page pensée pour être trouvée localement</h2>
             <p>
-              Le contenu met en avant les recherches locales importantes et les bons arguments marketing : proximité, confiance, qualité et rapidité.
+              Le contenu de cette page renforce naturellement les recherches locales les plus importantes pour votre activité.
             </p>
           </div>
 
@@ -836,9 +919,9 @@
     <section class="section" id="avis">
       <div class="container">
         <div class="section-head">
-          <h2>Des avis qui rassurent</h2>
+          <h2>Des avis qui rassurent avant même le premier appel</h2>
           <p>
-            En attendant tes vrais retours clients, on garde des avis de présentation pour donner de la crédibilité à la page.
+            En attendant vos vrais avis Google, ces témoignages donnent déjà une image plus crédible et plus humaine.
           </p>
         </div>
 
@@ -846,7 +929,7 @@
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Travail sérieux, propre et rapide. Très bon contact, devis simple et résultat à la hauteur. Je recommande.
+              Travail propre, rapide et très sérieux. Le jardin a été remis en état comme je le voulais. Contact simple et tarif correct.
             </p>
             <div class="review-author">— Cliente à Senonches</div>
           </article>
@@ -854,7 +937,7 @@
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Intervention efficace pour remettre le jardin en état. Personne fiable, ponctuelle et professionnelle.
+              Intervention efficace pour une tonte et une taille de haies. Personne ponctuelle, agréable et professionnelle. Je referai appel à ses services.
             </p>
             <div class="review-author">— Client du secteur</div>
           </article>
@@ -862,7 +945,7 @@
           <article class="card">
             <div class="review-stars">★★★★★</div>
             <p>
-              Très satisfait du service. Rapide, poli et appliqué. C’est rassurant d’avoir un artisan local compétent.
+              Très satisfait du résultat. On sent l’expérience, le sérieux et le souci du détail. C’est rassurant d’avoir un artisan local de confiance.
             </p>
             <div class="review-author">— Particulier, Eure-et-Loir</div>
           </article>
@@ -873,9 +956,9 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Avant / après : plusieurs chantiers en carousel</h2>
+          <h2>Avant / après : la preuve par l’image</h2>
           <p>
-            Oui, c’est même une très bonne idée : le visiteur voit plusieurs réalisations sans faire défiler toute la page. Remplace simplement les images par tes vrais chantiers.
+            Le visiteur comprend en quelques secondes le résultat que vous pouvez obtenir. Remplacez simplement les visuels ci-dessous par vos vrais chantiers.
           </p>
         </div>
 
@@ -890,7 +973,7 @@
                     <span class="before-badge">Avant</span>
                     <img src="images/chantier-1-avant.jpg" alt="Chantier 1 avant entretien jardin" />
                   </div>
-                  <p style="margin-top:14px;">Exemple : terrain encombré, herbe haute, haies à reprendre ou jardin à remettre en état.</p>
+                  <p style="margin-top:14px;">Jardin encombré, herbe haute, haies à reprendre ou extérieur qui demande une vraie remise au propre.</p>
                 </div>
 
                 <div class="card">
@@ -900,7 +983,7 @@
                     <span class="after-badge">Après</span>
                     <img src="images/chantier-1-apres.jpg" alt="Chantier 1 après entretien jardin" />
                   </div>
-                  <p style="margin-top:14px;">Résultat propre, net et valorisant pour montrer immédiatement la qualité du travail.</p>
+                  <p style="margin-top:14px;">Résultat net, propre et valorisant pour montrer immédiatement la qualité du travail réalisé.</p>
                 </div>
               </div>
             </div>
@@ -914,7 +997,7 @@
                     <span class="before-badge">Avant</span>
                     <img src="images/chantier-2-avant.jpg" alt="Chantier 2 avant création espace vert" />
                   </div>
-                  <p style="margin-top:14px;">Exemple : extérieur peu entretenu, zone vide ou espace à améliorer visuellement.</p>
+                  <p style="margin-top:14px;">Extérieur peu entretenu, zone vide ou espace qui manque de structure et de mise en valeur.</p>
                 </div>
 
                 <div class="card">
@@ -924,7 +1007,7 @@
                     <span class="after-badge">Après</span>
                     <img src="images/chantier-2-apres.jpg" alt="Chantier 2 après création espace vert" />
                   </div>
-                  <p style="margin-top:14px;">Mise en valeur de l’extérieur après entretien, réorganisation ou création d’un espace plus agréable.</p>
+                  <p style="margin-top:14px;">Un espace plus agréable, plus propre et mieux présenté, qui donne tout de suite une meilleure image du jardin.</p>
                 </div>
               </div>
             </div>
@@ -938,7 +1021,7 @@
                     <span class="before-badge">Avant</span>
                     <img src="images/chantier-3-avant.jpg" alt="Chantier 3 avant petit bricolage extérieur" />
                   </div>
-                  <p style="margin-top:14px;">Exemple : petit chantier extérieur ou zone nécessitant une intervention rapide et propre.</p>
+                  <p style="margin-top:14px;">Petit chantier extérieur ou zone nécessitant une intervention rapide, soignée et bien exécutée.</p>
                 </div>
 
                 <div class="card">
@@ -948,7 +1031,7 @@
                     <span class="after-badge">Après</span>
                     <img src="images/chantier-3-apres.jpg" alt="Chantier 3 après petit bricolage extérieur" />
                   </div>
-                  <p style="margin-top:14px;">Résultat final pour montrer le soin apporté, la finition et la transformation visible.</p>
+                  <p style="margin-top:14px;">Finition propre et transformation visible pour rassurer le visiteur avant même qu’il vous contacte.</p>
                 </div>
               </div>
             </div>
@@ -968,11 +1051,11 @@
         <div class="cta-box">
           <h2>Besoin d’un jardinier à Senonches ?</h2>
           <p>
-            Pour un entretien ponctuel, un suivi régulier, une création d’espace vert ou un petit bricolage, contacte Les Services de la Vaucouleurs dès maintenant.
+            Ne laissez pas votre extérieur se dégrader ou vous prendre tout votre temps libre. Appelez maintenant ou envoyez un message WhatsApp pour obtenir un devis gratuit et une réponse rapide.
           </p>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="tel:0763330326">📞 Appeler maintenant</a>
-            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Envoyer un message WhatsApp</a>
+            <a class="btn btn-primary" href="tel:0763330326">📞 Appeler pour un devis</a>
+            <a class="btn btn-secondary" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer">💬 Contacter sur WhatsApp</a>
           </div>
         </div>
       </div>
@@ -982,9 +1065,9 @@
       <div class="container grid-2">
         <div class="card">
           <div class="section-head" style="text-align:left; margin:0 0 12px;">
-            <h2>Contact rapide</h2>
+            <h2>Contact direct et sans complication</h2>
             <p>
-              Sur mobile, l’objectif est simple : appeler en un clic ou envoyer un message WhatsApp en quelques secondes.
+              Sur mobile, le plus simple reste un appel ou un message WhatsApp. Vous gagnez du temps, et nous pouvons répondre rapidement à votre besoin.
             </p>
           </div>
 
@@ -998,7 +1081,7 @@
           </ul>
 
           <p class="small-note">
-            Étape suivante recommandée : intégrer tes vraies photos de chantier, du avant/après et plus tard une carte Google.
+            Conseil conversion : ajoute ensuite de vraies photos de chantier, quelques avis Google et un lien Google Business pour renforcer encore la confiance.
           </p>
         </div>
 
@@ -1006,7 +1089,7 @@
           <div class="section-head" style="text-align:left; margin:0 0 12px;">
             <h2>Demande de devis</h2>
             <p>
-              Ce bloc est déjà prêt visuellement. Plus tard, on pourra le connecter à un vrai formulaire si besoin.
+              Décrivez simplement votre besoin. Cette section est prête visuellement et peut être reliée plus tard à un vrai formulaire.
             </p>
           </div>
 
@@ -1015,32 +1098,12 @@
             <input type="text" placeholder="Votre ville" />
             <input type="tel" placeholder="Votre téléphone" />
             <input type="email" placeholder="Votre email" />
-            <textarea placeholder="Décrivez votre besoin : tonte, taille, entretien, création d’espaces verts, petit bricolage..."></textarea>
+            <textarea placeholder="Décrivez votre besoin : tonte, taille de haies, entretien de jardin, création d’espaces verts, petit bricolage..."></textarea>
             <a class="btn btn-primary" href="tel:0763330326">📞 Appeler pour un devis gratuit</a>
           </form>
         </div>
       </div>
-        </section>
-
-    <!-- GALERIE PHOTOS -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Quelques réalisations</h2>
-          <p>Ajoute ici tes vraies photos (avant/après, chantiers, entretien, etc.)</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card"><img src="images/jardin-1.jpg" alt="Entretien jardin Senonches"></div>
-          <div class="card"><img src="images/jardin-2.jpg" alt="Tonte pelouse"></div>
-          <div class="card"><img src="images/jardin-3.jpg" alt="Taille haie"></div>
-          <div class="card"><img src="images/jardin-4.jpg" alt="Création espace vert"></div>
-          <div class="card"><img src="images/jardin-5.jpg" alt="Avant après jardin"></div>
-          <div class="card"><img src="images/jardin-6.jpg" alt="Petit bricolage extérieur"></div>
-        </div>
-      </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -1057,6 +1120,7 @@
     <a class="floater phone" href="tel:0763330326" aria-label="Appeler">📞</a>
     <a class="floater whatsapp" href="https://wa.me/33763330326" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
   </div>
+
   <script>
     (function () {
       const carousel = document.getElementById('beforeAfterCarousel');
